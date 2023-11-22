@@ -1,0 +1,77 @@
+body {
+    background-color: #f8f9fa;
+    
+}
+.container {
+    text-align: center;
+}
+
+
+.app-list {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.app-card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.app-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.upload-date {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.download-link {
+    max-width: 50%;
+    display: block;
+    background-color: #def7ff;
+    color: #000000;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+#pagination {
+    text-align: right;
+    margin-top: 20px;
+}
+
+#pagination a {
+    display: inline-block;
+    padding: 8px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+}
+
+#pagination a:hover {
+    background-color: #def7ff;
+    color: #000000;
+}
+
+#pagination .disabled {
+    pointer-events: none;
+    color: #777;
+    background-color: #ddd;
+}

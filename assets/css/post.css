@@ -1,0 +1,43 @@
+body {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.post {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.post h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.post p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.post a {
+    background-color: #def7ff;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post a:hover {
+    color: white;
+}

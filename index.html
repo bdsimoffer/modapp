@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaked Mod APK</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/header/header.css">
+    <link rel="stylesheet" href="assets/header/ayhay.css">
+    <script src="assets/header/header.js"></script>
+    <script src="assets/js/index.js"></script>
+</head>
+
+<body>
+    <div id="headerContainer" class="header"></div>
+
+    <div class="container">
+        <div class="app-list">
+            <div id="appList"></div>
+            <div id="pagination"></div>
+        </div>
+    </div>
+    <script id="appTemplate" type="text/html">
+    <div class="app-card post card">
+        <img src="" alt="" class="card-img-top app-image">
+        <div class="card-body">
+            <h5 class="card-title app-name"></h5>
+        </div>
+        <a href="" target="_blank" class="btn btn-primary download-link">Download</a>
+    </div>
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('assets/header/header.html')
+            .then(response => response.text())
+            .then(html => {
+                const headerContainer = document.getElementById('headerContainer');
+                headerContainer.innerHTML = html;
+                setupHeader();
+            })
+            .catch(error => console.error('Error fetching header content:', error));
+    });
+    </script>
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('assets/footer/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                const footerContainer = document.createElement('div');
+                footerContainer.innerHTML = html;
+
+                document.body.appendChild(footerContainer);
+            })
+            .catch(error => console.error('Error fetching footer content:', error));
+    });
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
