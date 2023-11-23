@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - App Download Platform</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        .jumbotron {
+            background-color: #f8f9fa;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .btn {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+  <div id="headerContainer" class="header"></div>
+
+    <div class="container">
+        <div class="jumbotron mt-5">
+            <h2 class="mb-4">About Us</h2>
+            <p>Welcome to our App Download Platform! We provide a curated collection of apps for you to discover, download, and enjoy.</p>
+            <p>Our platform aims to make the app discovery process easy and convenient. We strive to offer a diverse range of apps to cater to different interests and needs.</p>
+            <p>Please note that while we make efforts to ensure the quality and safety of the apps featured on our platform, we do not take responsibility for any harm caused by the downloaded apps. Users are advised to exercise caution and review app permissions before installation.</p>
+            <p>Feel free to explore our platform and find the apps that enhance your digital experience. If you have any questions or suggestions, don't hesitate to contact us.</p>
+
+            <h4 class="mt-5">Contact Us</h4>
+            <div class="btn-container">
+                <a href="https://t.me/leakedmodapk" class="btn btn-primary" target="_blank">Channel</a>
+                <a href="https://t.me/leaked_method" class="btn btn-primary" target="_blank">Admin Channel</a>
+                <a href="https://t.me/leaked_modapk_bot" class="btn btn-primary" target="_blank">Mod Bot</a>
+                <a href="https://t.me/leakedbin_bot" class="btn btn-primary" target="_blank">Bin Bot</a>
+            </div>
+        </div>
+    </div>
+
+      <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('assets/header/header.html')
+            .then(response => response.text())
+            .then(html => {
+                const headerContainer = document.getElementById('headerContainer');
+                headerContainer.innerHTML = html;
+                setupHeader();
+            })
+            .catch(error => console.error('Error fetching header content:', error));
+    });
+    </script>
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('assets/footer/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                const footerContainer = document.createElement('div');
+                footerContainer.innerHTML = html;
+
+                document.body.appendChild(footerContainer);
+            })
+            .catch(error => console.error('Error fetching footer content:', error));
+    });
+    </script>
+<script>
+    function incrementCount(pageKey) {
+        var currentCount = parseInt(localStorage.getItem(pageKey)) || 0;
+        currentCount++;
+        localStorage.setItem(pageKey, currentCount);
+    }
+    incrementCount('aboutCount'); 
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
 
