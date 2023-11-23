@@ -41,7 +41,7 @@
                     const postContainer = document.getElementById('postContainer');
                     postContainer.innerHTML = `
                         <h1>${postData.name}</h1>
-                        <img src="${postData.img}" alt="${postData.name}">
+                        <img src="${postData.img}" alt="${postData.name}" style="max-width:30%; max-height:30%; margin:0px auto; margin-top:20px;">
                         <p>Upload Date & time: ${postData.upload_date}</p>
                         <p><a href="${postData.download_link}" target="_blank" class="btn btn-primary">DOWNLOAD</a></p>
                     `;
