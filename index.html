@@ -58,6 +58,15 @@
             .catch(error => console.error('Error fetching footer content:', error));
     });
     </script>
+<script>
+    function incrementCount(pageKey) {
+        var currentCount = parseInt(localStorage.getItem(pageKey)) || 0;
+        currentCount++;
+        localStorage.setItem(pageKey, currentCount);
+    }
+    incrementCount('indexCount'); 
+</script>
+
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
