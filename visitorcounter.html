@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Count</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="mt-5">Visitor Counts</h1>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <p>Index Page: <span id="indexCount" class="font-weight-bold">loading...</span> visits</p>
+                <p>Post Page: <span id="postCount" class="font-weight-bold">loading...</span> visits</p>
+            </div>
+            <div class="col-md-6">
+                <p>About Page: <span id="aboutCount" class="font-weight-bold">loading...</span> visits</p>
+                <p>Contact Page: <span id="contactCount" class="font-weight-bold">loading...</span> visits</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateCount(elementId, pageKey) {
+            var currentCount = localStorage.getItem(pageKey) || 0;
+            document.getElementById(elementId).innerText = currentCount;
+        }
+
+        updateCount('indexCount', 'indexCount');
+        updateCount('postCount', 'postCount');
+        updateCount('aboutCount', 'aboutCount');
+        updateCount('contactCount', 'contactCount');
+    </script>
+
+</body>
+</html>
