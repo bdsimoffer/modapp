@@ -76,6 +76,19 @@
                 .catch(error => console.error('Error fetching footer content:', error));
         });
     </script>
+    <!-- Add this script at the end of each HTML file -->
+<script>
+    // Function to increment the visitor count for a specific page
+    function incrementCount(pageKey) {
+        var currentCount = parseInt(localStorage.getItem(pageKey)) || 0;
+        currentCount++;
+        localStorage.setItem(pageKey, currentCount);
+    }
+
+    // Call the function with a unique key for each page
+    incrementCount('postCount'); // For index.html
+</script>
+
 
 </body>
 
